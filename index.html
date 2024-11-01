@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="responseMessage"></p>
+    </div>
+
+    <div class="grades-container" style="display: none;">
+        <h2>Enter Student Grades</h2>
+        <form id="gradesForm">
+            <input type="text" id="studentName" name="studentName" placeholder="Student Name" required>
+            <div id="gradesInputs">
+                <input type="number" id="grade1" name="grade1" placeholder="Grade 1" required>
+                <input type="number" id="grade2" name="grade2" placeholder="Grade 2" required>
+                <input type="number" id="grade3" name="grade3" placeholder="Grade 3" required>
+                <input type="number" id="grade4" name="grade4" placeholder="Grade 4" required>
+                <input type="number" id="grade5" name="grade5" placeholder="Grade 5" required>
+            </div>
+            <button type="submit">Calculate Grades</button>
+        </form>
+        <p id="gradesMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
